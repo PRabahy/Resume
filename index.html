@@ -37,8 +37,10 @@
 			margin-top: 0;
 			}
 		#hidden{
-			visibility:hidden;
+			visibility:collapse;
 			max-height: 0;
+			margin-top: 0;
+			margin: 0;
 			}
 		.date{
 			float:right;
@@ -47,9 +49,9 @@
 			text-align:right;
 			}
 		abbr, acronym{
-			border-bottom:1px dotted #333;
+			text-decoration: none;
 			cursor:help;
-			}	
+			}
 		info{
 			font-style:italic;
 			color:#333;
@@ -73,6 +75,9 @@
 		h3{
 			margin: 1em 0 0 0;
 		}
+		h4{
+			margin: .5em 0 0 0;
+		}
 	</style>
 	<style type="text/css" media="print">
 		body{
@@ -82,7 +87,7 @@
 			width:100%
 			}
 		abbr, acronym{
-			border-bottom:0px;
+			text-decoration: none;
 			}
 	</style>
 </head>
@@ -110,7 +115,7 @@
 				<li>Concentration in Computer and Network Security</li>
 			</ul>
 		</ul>
-		<h3>Detroit Catholic Central High School <span class="date">Fall 2002 &raquo; Fall 2006</span></h3>
+		<h4>Detroit Catholic Central High School <span class="date">Fall 2002 &raquo; Fall 2006</span></h4>
 	</div>	
 	
 	<div>
@@ -123,6 +128,7 @@
 			<li>Directed the development of a unified software package that supported 22 unique test assets and 26 tests</li>
 			<li>Expanded my groups responsibilities to include our Safety & Abuse area</li>
 			<li>Piloted a program to migrate our lab to a new vendor's software stack and test custom enhancements designed to facilitate our workflow</li>
+			<li>Provided guidance during times of ambiguity and conflicting requirements</li>
 		</ul>
 		<h3>Software Engineer <span class="date">May 2015 &raquo; June 2020</span></h3>
 		<em>General Motors: Warren, MI</em>
@@ -130,7 +136,7 @@
 			<li>Created scripts for testing high voltage battery packs</li>
 			<li>Worked across multiple teams to improve test standards and documentation</li>
 			<li>Developed and maintained interfaces to environmental chambers, chillers, and battery cyclers</li>
-			<li>Debugged issues with battery packs that were still in early development</li>
+			<li>Provided troubleshooting for issues with battery packs that were still in early development</li>
 			<li>Distributed workload between team members using Gitlab issue tracker</li>
 		</ul>
 		<h3>Software Engineer <span class="date">Jan. 2011 &raquo; May 2015</span></h3>
@@ -151,9 +157,9 @@
 			<li>Played active role in physical data center management</li>
 		</ul>
 		
-		<h3>Owner <span class="date">March 2002 &raquo; Sept. 2010</span></h3>
-		<em>Rabahy Computer Services: Northville, MI</em>
-		<ul>
+		<h3 id="hidden">Owner <span id="hidden" class="date">March 2002 &raquo; Sept. 2010</span></h3>
+		<em id="hidden">Rabahy Computer Services: Northville, MI</em>
+		<ul id="hidden">
 			<li>Setup wireless networks with proper security</li>
 			<li>Removed spyware and viruses then informed customers how to prevent infection</li>
 			<li>Grew customer base to 100+</li>
@@ -166,7 +172,7 @@
 		<ul>
 			<li>Network configuration and diagnostics with Wireshark</li>
 			<li>Windows administration including security hardening and clustering</li>
-			<li>File encryption and signing techniques using <abbr title="GNU Privacy Guard">GPG</abbr></li>
+			<li id="hidden">File encryption and signing techniques using <abbr title="GNU Privacy Guard">GPG</abbr></li>
 			<li>High level program languages including C#, Java, and Python</li>
 			<li>Website design using HTML/CSS</li>
 			<li>Source code control systems including Git, SVN, and Perforce</li>
@@ -177,22 +183,9 @@
 	<div>
 		<h2>Other Experience</h2>
 		
-		<h3>President of Phi Delta Theta <span class="date">June 2009 &raquo; June 2010</span></h3>
-		<ul id="hidden">
-			<li>Organized ~20 college aged students</li>
-			<li>Handled all external relations including with Kettering and <abbr title="General Headquarters">GHQ</abbr></li>
-		</ul>
+		<h4>President of Phi Delta Theta <span class="date">June 2009 &raquo; June 2010</span></h4>
 		
-		<h3>Treasurer of Phi Delta Theta <span class="date">June 2008 &raquo; June 2010</span></h3>
-		<ul id="hidden">
-			<li>Managed a budget of $40,000</li>
-			<li>Reorganized budget to meet house changes</li>
-		</ul>
-		
-		<h3>Eagle Scout with <abbr title="Boy Scouts of America">BSA</abbr> <span class="date">Sept. 2005</span></h3>
-		<ul id="hidden">
-			<li>Led many volunteers installing playground equipment at a middle school</li>
-		</ul>
+		<h4>Eagle Scout with <abbr title="Boy Scouts of America">BSA</abbr> <span class="date">Sept. 2005</span></h4>
 	</div>
 	
 	<div>
@@ -207,7 +200,7 @@
 	<div id="hidden">
 		<h2>Other Interests</h2>
 		<ul>
-			<li>Backpacking, Camping, Ultimate Frisbee</li>
+			<li>Backpacking, Camping</li>
 		</ul>
 	</div>
 	
